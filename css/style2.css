@@ -1,0 +1,930 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #192133;
+  color: whitesmoke;
+  font-weight: lighter;
+  font-family: "Roboto", "HelveticaNeue-Light", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+/*------------------- header ----------- */
+
+.container1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.container1 article {
+  height: 70px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.container1 article span i {
+  padding-right: 15px;
+  color: #ffffff99;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.logo {
+  width: 7%;
+}
+.logo img {
+  width: 115px;
+  height: 45px;
+  padding-bottom: 10px;
+  position: static;
+}
+.mainContain {
+  /* border: 2px solid yellow; */
+  display: flex;
+  width: 30%;
+}
+.mainContain ul {
+  text-decoration: none;
+  display: flex;
+}
+.mainContain ul li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.mainContain ul li a {
+  text-decoration: none;
+  /* color: whitesmoke; */
+  /* color: #ffffff99; */
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 15px 1px;
+  line-height: normal;
+  font-family: "Roboto", "HelveticaNeue-Light", sans-serif;
+  opacity: 1;
+}
+.mainContain ul li a div {
+  width: 20px;
+  height: 7px;
+  margin: 3px auto 0;
+}
+
+.kids {
+  display: flex;
+  width: 20%;
+  /* padding-right: 150px; */
+}
+.kids img {
+  width: 80px;
+  height: 15px;
+  background: no-repeat;
+  margin-left: 180px;
+  padding-right: 30px;
+  margin-top: 6px;
+}
+
+.searchBox {
+  width: 25%;
+  display: flex;
+}
+
+.searchBox form input {
+  width: 129%;
+  background-color: #192133;
+  border-radius: 3px;
+  /* border-bottom: 0.5px solid white; */
+  border-width: 0 0 2px;
+  /* border-color: #fff; */
+  padding: 3px 0px;
+  outline: none;
+  border-bottom: 0.5px solid white;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", "HelveticaNeue-Light", sans-serif;
+  /* color: white; */
+  font-size: 15px;
+  display: flex;
+}
+/* .searchBox form input:focus {
+  background-color: #192133;
+  border-radius: 3px; */
+/* border-bottom: 0.5px solid white; */
+/* border-color: blue; */
+/* border-width: 0 0 2px; */
+
+/* outline: none;
+  border: none;
+  padding: 3px 0px;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", "HelveticaNeue-Light", sans-serif;
+  color: #192133;
+  font-size: 15px;
+  display: flex;
+  width: 250px;
+} */
+/* .searchBox form input[type="text"]::placeholder { */
+/* Firefox, Chrome, Opera */
+/* width: 100px; */
+/* -webkit-transition: width 0.35s ease-in-out; */
+/* transition: width 0.35s ease-in-out; */
+/* } */
+/* .searchicon {
+  padding: 10px;
+  display: flex;
+} */
+
+/* ---------------------sublog------------------ */
+.sublog {
+  display: flex;
+  width: 10%;
+  float: right;
+  position: static;
+  left: 0;
+}
+.sublog button {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 18px 15px;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(31 128 224);
+  border: none;
+  outline: 0;
+  outline-color: transparent;
+  position: relative;
+  outline: none !important;
+  font-size: 12px;
+  margin: 15px 0 15px -30px;
+  padding: 0 12px;
+  letter-spacing: 0.4px;
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 4px;
+  font-family: "Roboto";
+  position: static;
+}
+
+.sublog ul {
+  text-decoration: none;
+  display: flex;
+}
+.sublog ul li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.sublog ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 15px 20px;
+  line-height: normal;
+  color: var(--TEXT_COLOR_L0);
+  font-weight: 500;
+  opacity: 1;
+}
+
+/*------------ overlay menus--------  */
+.dropbtn {
+  background-color: #192133;
+  color: whitesmoke;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  /* font-weight: bold; */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #24232f;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #2d3b5a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #192133;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 10px 10px 30px 10px;
+}
+
+.container .card-container,
+.container .cricket-card-container,
+.container .movies-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.container .card-container .card,
+.container .cricket-card-container .card,
+.container .movies-card-container .card,
+.container .cricket-card-container .cricket-card,
+.container .movies-card-container .movie-card {
+  margin: 0.5em 0 1em 1em;
+  width: 147px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  position: relative;
+  border-radius: 8px;
+}
+
+.container .card-container .card:hover,
+.container .cricket-card-container .card:hover,
+.container .movies-card-container .card:hover,
+.container .cricket-card-container .cricket-card:hover,
+.container .movies-card-container .movie-card:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  z-index: 1;
+}
+
+.container .card-container .card:hover .card-details,
+.container .cricket-card-container .card:hover .card-details,
+.container .movies-card-container .card:hover .card-details,
+.container .cricket-card-container .cricket-card:hover .card-details,
+.container .movies-card-container .movie-card:hover .card-details,
+.container
+  .card-container
+  .card:hover
+  .cricket-card-container
+  .cricket-card
+  .cric-card-details,
+.container .cricket-card-container .card:hover .cricket-card .cric-card-details,
+.container .cricket-card-container .cricket-card .card:hover .cric-card-details,
+.container
+  .movies-card-container
+  .card:hover
+  .cricket-card-container
+  .cricket-card
+  .cric-card-details,
+.container .cricket-card-container .cricket-card:hover .cric-card-details,
+.container
+  .cricket-card-container
+  .movies-card-container
+  .movie-card:hover
+  .cricket-card
+  .cric-card-details,
+.container
+  .movies-card-container
+  .cricket-card-container
+  .movie-card:hover
+  .cricket-card
+  .cric-card-details,
+.container
+  .movies-card-container
+  .cricket-card-container
+  .cricket-card
+  .movie-card:hover
+  .cric-card-details,
+.container
+  .movies-card-container
+  .movie-card:hover
+  .cricket-card-container
+  .cricket-card
+  .cric-card-details,
+.container
+  .cricket-card-container
+  .cricket-card
+  .movies-card-container
+  .movie-card:hover
+  .cric-card-details,
+.container
+  .card-container
+  .card:hover
+  .movies-card-container
+  .movie-card
+  .movie-card-details,
+.container
+  .cricket-card-container
+  .card:hover
+  .movies-card-container
+  .movie-card
+  .movie-card-details,
+.container .movies-card-container .card:hover .movie-card .movie-card-details,
+.container .movies-card-container .movie-card .card:hover .movie-card-details,
+.container
+  .cricket-card-container
+  .cricket-card:hover
+  .movies-card-container
+  .movie-card
+  .movie-card-details,
+.container
+  .movies-card-container
+  .cricket-card-container
+  .cricket-card:hover
+  .movie-card
+  .movie-card-details,
+.container
+  .movies-card-container
+  .movie-card
+  .cricket-card-container
+  .cricket-card:hover
+  .movie-card-details,
+.container
+  .cricket-card-container
+  .movies-card-container
+  .cricket-card:hover
+  .movie-card
+  .movie-card-details,
+.container
+  .cricket-card-container
+  .movies-card-container
+  .movie-card
+  .cricket-card:hover
+  .movie-card-details,
+.container .movies-card-container .movie-card:hover .movie-card-details {
+  opacity: 1;
+}
+
+.container .card-container .card .card-img,
+.container .cricket-card-container .card .card-img,
+.container .movies-card-container .card .card-img,
+.container .cricket-card-container .cricket-card .card-img,
+.container .movies-card-container .movie-card .card-img {
+  width: inherit;
+  position: relative;
+  padding-bottom: calc(1.32821 * 100%);
+}
+
+.container .card-container .card .card-img img,
+.container .cricket-card-container .card .card-img img,
+.container .movies-card-container .card .card-img img,
+.container .cricket-card-container .cricket-card .card-img img,
+.container .movies-card-container .movie-card .card-img img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.container .card-container .card .card-details,
+.container .cricket-card-container .card .card-details,
+.container .movies-card-container .card .card-details,
+.container .cricket-card-container .cricket-card .card-details,
+.container .movies-card-container .movie-card .card-details,
+.container .cricket-card-container .cricket-card .cric-card-details,
+.container .movies-card-container .movie-card .movie-card-details {
+  font-family: "Roboto", sans-serif;
+  opacity: 0;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  width: inherit;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(4, 8, 15, 0)),
+    color-stop(#192133),
+    to(#192133)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(4, 8, 15, 0),
+    #192133,
+    #192133
+  );
+  padding: 30px 5px 7px 5px;
+}
+
+.container .card-container .card .card-details .card-title,
+.container .cricket-card-container .card .card-details .card-title,
+.container .movies-card-container .card .card-details .card-title,
+.container .cricket-card-container .cricket-card .card-details .card-title,
+.container .movies-card-container .movie-card .card-details .card-title,
+.container .cricket-card-container .cricket-card .cric-card-details .card-title,
+.container .movies-card-container .movie-card .movie-card-details .card-title {
+  font-size: 0.6rem;
+  font-weight: 600;
+  margin: 0;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.container .card-container .card .card-details .title-info,
+.container .cricket-card-container .card .card-details .title-info,
+.container .movies-card-container .card .card-details .title-info,
+.container .cricket-card-container .cricket-card .card-details .title-info,
+.container .movies-card-container .movie-card .card-details .title-info,
+.container .cricket-card-container .cricket-card .cric-card-details .title-info,
+.container .movies-card-container .movie-card .movie-card-details .title-info {
+  font-size: 0.5rem;
+  font-weight: 600;
+  margin: 1px 0 0 0;
+}
+
+.container .card-container .card .card-details .description,
+.container .cricket-card-container .card .card-details .description,
+.container .movies-card-container .card .card-details .description,
+.container .cricket-card-container .cricket-card .card-details .description,
+.container .movies-card-container .movie-card .card-details .description,
+.container
+  .cricket-card-container
+  .cricket-card
+  .cric-card-details
+  .description,
+.container .movies-card-container .movie-card .movie-card-details .description {
+  font-size: 0.5rem;
+  margin: 3px 0 0 0;
+  color: white;
+}
+
+.container .card-container .card .card-details .action-btn,
+.container .cricket-card-container .card .card-details .action-btn,
+.container .movies-card-container .card .card-details .action-btn,
+.container .cricket-card-container .cricket-card .card-details .action-btn,
+.container .movies-card-container .movie-card .card-details .action-btn,
+.container .cricket-card-container .cricket-card .cric-card-details .action-btn,
+.container .movies-card-container .movie-card .movie-card-details .action-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: none;
+  -ms-flex-pack: none;
+  justify-content: none;
+  -webkit-box-align: none;
+  -ms-flex-align: none;
+  align-items: none;
+}
+
+.container .card-container .card .card-details .action-btn .btn,
+.container .cricket-card-container .card .card-details .action-btn .btn,
+.container .movies-card-container .card .card-details .action-btn .btn,
+.container .cricket-card-container .cricket-card .card-details .action-btn .btn,
+.container .movies-card-container .movie-card .card-details .action-btn .btn,
+.container
+  .cricket-card-container
+  .cricket-card
+  .cric-card-details
+  .action-btn
+  .btn,
+.container
+  .movies-card-container
+  .movie-card
+  .movie-card-details
+  .action-btn
+  .btn {
+  font-size: 0.5rem;
+  padding: 3px 5px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.container .card-container .card .card-details .action-btn .btn:hover,
+.container .cricket-card-container .card .card-details .action-btn .btn:hover,
+.container .movies-card-container .card .card-details .action-btn .btn:hover,
+.container
+  .cricket-card-container
+  .cricket-card
+  .card-details
+  .action-btn
+  .btn:hover,
+.container
+  .movies-card-container
+  .movie-card
+  .card-details
+  .action-btn
+  .btn:hover,
+.container
+  .cricket-card-container
+  .cricket-card
+  .cric-card-details
+  .action-btn
+  .btn:hover,
+.container
+  .movies-card-container
+  .movie-card
+  .movie-card-details
+  .action-btn
+  .btn:hover {
+  background-color: grey;
+  border-radius: 2px;
+}
+
+.container .card-container .card .card-details .action-btn * + *,
+.container .cricket-card-container .card .card-details .action-btn * + *,
+.container .movies-card-container .card .card-details .action-btn * + *,
+.container
+  .cricket-card-container
+  .cricket-card
+  .card-details
+  .action-btn
+  *
+  + *,
+.container .movies-card-container .movie-card .card-details .action-btn * + *,
+.container
+  .cricket-card-container
+  .cricket-card
+  .cric-card-details
+  .action-btn
+  *
+  + *,
+.container
+  .movies-card-container
+  .movie-card
+  .movie-card-details
+  .action-btn
+  *
+  + * {
+  margin: 1px 0;
+}
+
+.container .cricket-card-container .cricket-card {
+  width: 200px;
+}
+
+.container .cricket-card-container .cricket-card .card-img {
+  width: inherit;
+  position: relative;
+  padding-bottom: calc(0.56821 * 100%);
+}
+
+.container
+  .cricket-card-container
+  .cricket-card
+  .cric-card-details
+  .card-title
+  .link-btn {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 1em;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .container .card-container,
+  .container .cricket-card-container,
+  .container .movies-card-container,
+  .container .cricket-card-container,
+  .container .movies-card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+/* slider  */
+.slider {
+  display: flex;
+  width: 100%;
+  border: 1px solid white;
+  height: 380px;
+}
+
+/*------------- footer ---------- */
+footer {
+  /* border: 2px solid yellow; */
+  /* display: flex; */
+  width: 100%;
+}
+.mainfoot {
+  display: flex;
+}
+.leftfooter {
+  width: 60%;
+}
+.leftfooter ul {
+  text-decoration: none;
+  display: flex;
+}
+.leftfooter ul li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.leftfooter ul li a {
+  text-decoration: none;
+  /* color: whitesmoke; */
+  /* color: #ffffff99; */
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 15px 1px;
+  line-height: normal;
+  font-family: "Roboto", "HelveticaNeue-Light", sans-serif;
+  opacity: 1;
+}
+.leftfooter ul li a:hover {
+  /* background-color: rgb(31 128 224); */
+  color: rgb(31 128 224);
+}
+
+.rightfooter {
+  width: 40%;
+}
+.rightfooter ul {
+  text-decoration: none;
+  display: flex;
+}
+.rightfooter ul li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.rightfooter ul li a {
+  text-decoration: none;
+  /* color: whitesmoke; */
+  /* color: #ffffff99; */
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 15px 1px;
+  line-height: normal;
+  font-family: "Roboto", "HelveticaNeue-Light", sans-serif;
+  opacity: 1;
+}
+.mainbtmcon {
+  width: 100%;
+  display: flex;
+}
+.leftfootcont {
+  width: 60%;
+}
+.leftfootcont p {
+  text-decoration: none;
+  display: flex;
+  padding-top: 11px;
+  padding-right: 15%;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: rgb(218 218 218);
+  font-weight: 400;
+}
+.logofooter {
+  width: 10%;
+  position: relative;
+  /* margin-left: 460px; */
+}
+.logofooter a i {
+  font-size: 20px;
+  /* word-spacing: 3px; */
+  padding: 12px 13px;
+  margin-left: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #2d3b5a;
+  border-radius: 4px;
+}
+
+.logofooter a i:hover {
+  background-color: rgb(31 128 224);
+  color: whitesmoke;
+}
+
+.applog {
+  width: 30%;
+  display: flex;
+  padding: 10px 71px 56px 98px;
+}
+.applog .img1 img {
+  height: 30px;
+  width: 120px;
+}
+.applog .img2 img {
+  height: 30px;
+  width: 120px;
+}
+
+/* .img1 {
+  width: 300px;
+  height: 195px; */
+/* border: 1px solid whitesmoke; */
+/* margin-left: 100px;
+  background-image: url("../images/applogo.svg");
+  background-repeat: no-repeat;
+}
+.img1:hover {
+  background-image: url("../images/applogo.svg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 195px;
+} */
+/* .applog a {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  /* margin-right: 100px; */
+/* cursor: pointer;
+} */
+.applog a .img1 {
+  width: 40px;
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-right: -48px;
+}
+
+.img1:hover {
+  background-color: #1f80e0;
+
+  border-radius: 6px;
+}
+.img2:hover {
+  background-color: #1f80e0;
+
+  border-radius: 6px;
+}
+
+*/
+/* a:hover{
+  color: aqua;
+}
+i:hover{
+  color: rgb(2, 242, 250);
+} */
+
+.newsearchBlock {
+  margin-right: 100px;
+  display: flex;
+  border: none;
+  box-shadow: none;
+  width: 20%;
+  margin-left: 10px;
+  color: whitesmoke;
+  float: right;
+  float: right;
+  padding-left: 60px;
+  outline: none;
+}
+.newsearchBlock input[type="text"] {
+  width: 100px;
+  -webkit-transition: width 0.35s ease-in-out;
+  /* transition: width 0.35s ease-in-out; */
+  transition: all 0.2s cubic-bezier(0.95, 0.6, 0.25, 0.45) reverse;
+
+  /* 0.95, 0.6, 0.25, 0.45 */
+  /* animation: slide 3s cubic-bezier(0.45, 0.25, 0.6, 0.95) reverse; */
+  color: whitesmoke;
+}
+input[type="text"]:focus {
+  width: 250px;
+  /* border-color: skyblue; */
+  border-bottom: 1px solid skyblue;
+  outline: none;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.magni {
+  display: flex;
+}
+.newsearchBlock i {
+  margin-right: 60px;
+  /* padding-right: 20px; */
+}
+
+.taskbarbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* taskbar ------------- */
+.taskbar {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 0.795);
+  /* background-color: #fff; */
+}
+
+.taskbar-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+
+  z-index: 1;
+}
+
+.taskbar-content a {
+  color: rgba(245, 245, 245, 0.568);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.taskbar-content a:hover {
+  background-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.taskbar:hover .taskbar-content {
+  display: block;
+}
+
+.taskbar:hover a {
+  background-color: #2d3b5a;
+}
